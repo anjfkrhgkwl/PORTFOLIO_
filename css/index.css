@@ -321,13 +321,17 @@ h2 {
 
 .about .inner .profile_imagebox {}
 
-.about .inner .profile_imagebox .imagebox {}
-
-.about .inner .profile_imagebox .imagebox figure {
+.about .inner .profile_imagebox .imagebox {
     width: 342px;
     height: 400px;
     background-color: var(--color-p);
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.about .inner .profile_imagebox .imagebox figure {
+    width: 100%;
+    height: 100%;
 }
 
 .about .inner .profile_imagebox .imagebox figure img {
