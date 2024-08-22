@@ -558,7 +558,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 40px;
+    row-gap: 80px;
     position: relative;
 }
 
