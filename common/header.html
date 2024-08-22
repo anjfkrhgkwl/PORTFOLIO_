@@ -1,0 +1,55 @@
+<body>
+    <script>
+        $('a').click(function (event) {
+            event.preventDefault();
+        }) //클릭 이벤트 무시
+
+        let headerMenu = $('.gnb li');
+
+        headerMenu.click(function () {
+            let section = $('.section').eq($(this).index());
+            console.log(section);
+            $('html, body').animate({
+                scrollTop: section.offset().top
+            }, 2000, 'swing');
+        });
+
+        
+    </script>
+
+    <div class="header">
+        <div class="header_inner">
+            <h1 class="logo">Web Portfolio</h1>
+
+            <nav class="pc pc_nav nav">
+                <ul class="gnb">
+                    <li><a href="#intro" class="depth01">Intro</a></li>
+                    <li><a href="#about" class="depth01">About</a></li>
+                    <li><a href="#webdesign" class="depth01">Web Design</a></li>
+                    <li><a href="#graphicdesign" class="depth01">Graphic Design</a></li>
+                    <li><a href="#contact" class="depth01">Contact</a></li>
+                </ul><!-- .gnb end -->
+            </nav><!-- pc .pc_nav nav end -->
+
+            <div class="mobile mobile_openbtn">
+                <div class="menu_icon">
+                    <div><span>menu_icon</span></div>
+                    <div><span>menu_icon</span></div>
+                    <div><span>menu_icon</span></div>
+                </div><!-- .menu_icon -->
+            </div><!-- .mobile mobile_openbtn end -->
+
+            <nav class="mobile mobile_nav nav">
+                <ul class="gnb">
+                    <li><a href="#" class="detph01">Intro</a></li>
+                    <li><a href="#" class="detph01">About</a></li>
+                    <li><a href="#" class="detph01">Web Design</a></li>
+                    <li><a href="#" class="detph01">Graphic Design</a></li>
+                    <li><a href="#" class="detph01">Contact</a></li>
+                </ul><!-- .gnb end -->
+            </nav><!-- mobile .mobile_nav nav end -->
+
+        </div><!-- header_inner end -->
+    </div>
+
+</body>

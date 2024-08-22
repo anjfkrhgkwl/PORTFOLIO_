@@ -1,0 +1,54 @@
+<body>
+    <script>
+        let percents = $('.percent');
+        let bgBox = $('.loding_bg');
+
+        let count = 4;
+        let per = 16;
+
+        let loding = setInterval(animate, 35);
+        //let lodingOut = setTimeout(animateOut, 40);
+        let lodingPage = $('#loding');
+
+        function animate() {
+            if (count == 100 && per == 400) {
+                clearInterval(loding);
+            } else {
+                per = per + 4;
+                count = count + 1;
+                bgBox.css('height', count + 'vh');
+                $('body').css('overflow', 'hidden');
+                percents.text(count + '%');
+                $('.intro').addClass('on');
+                $('.loding_text').addClass('on');
+                $('.text_deco div').addClass('on');
+            };
+            setTimeout(() => {
+                lodingPage.addClass('hide');
+                $('.intro').removeClass('on')
+                $('body').css('overflow', 'visible');
+            }, 4500)
+
+        }
+    </script>
+    <div class="loding">
+        <div class="loding_inner">
+            <div class="loding_bg">
+                <span>bg</span>
+            </div><!-- .loding_bg end -->
+            <div class="loding_text">
+                <div class="percent">100%</div>
+                <div class="text">
+                    <h1>Loding</h1>
+                    <div class="text_deco">
+                        <div><span>deco</span></div>
+                        <div><span>deco</span></div>
+                        <div><span>deco</span></div>
+                    </div><!-- .text_deco end -->
+                </div><!-- text end -->
+            </div><!-- .loding_text end -->
+        </div><!-- .loding_inner end -->
+
+    </div><!-- loding -->
+
+</body>

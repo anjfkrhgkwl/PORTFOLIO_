@@ -1,0 +1,64 @@
+<body>
+    <script>
+        $(function(){
+            let closeBtn = $('.close_btn');
+            let contactBox = $('.contact_box');
+            let contactBtn = $('.contact_btn');
+            let bar = $('.right_bar')
+
+            contactBtn.click(function(){
+                contactBox.addClass('active');
+            });
+            closeBtn.click(function(){
+                contactBox.removeClass('active');
+            });
+
+            $(window).scroll(function () {
+                let scrollBar = $(window).scrollTop();
+                if(scrollBar >= 1100){
+                    bar.removeClass('off');
+                } else {
+                    bar.addClass('off');
+                }
+            });
+
+            let upBtn = $('.intro_up');
+            upBtn.click(function(){
+                $('html, body').animate({
+                    scrollTop : 0
+                }, 2000, 'swing');
+            })
+        });
+    </script>
+
+    <div class="right_bar off">
+        <div class="right_bar_inner">
+            <div class="contact_btn">
+                <h4>CONTACT</h4>
+            </div><!-- .contact_btn end -->
+
+            <div class="contact_box">
+                <div class="text">
+                    <ul>
+                        <li>
+                            <h6>PHONE :</h6>
+                            <strong>010.5657.2720</strong>
+                        </li>
+                        <li>
+                            <h6>EMAIL :</h6>
+                            <strong>skskgus7516@gmail.com</strong>
+                        </li>
+                    </ul>
+                </div><!-- .text end -->
+                <div class="close_btn">
+                    <div class="btn_icon">
+                    </div><!-- .btn_icon end -->
+                </div><!-- .close_btn end -->
+            </div><!-- .contact_box end -->
+
+            <div class="intro_up">
+                <div class="up_icon"></div>
+            </div><!-- .intro_up end -->
+        </div><!-- .right_bar_inner end -->
+    </div><!-- .right_bar -->
+</body>

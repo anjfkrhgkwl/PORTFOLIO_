@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Fusskia Demo';
+    src: url('FusskiaDemo-Regular.eot');
+    src: url('FusskiaDemo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FusskiaDemo-Regular.woff2') format('woff2'),
+        url('FusskiaDemo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

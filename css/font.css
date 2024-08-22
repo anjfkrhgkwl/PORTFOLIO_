@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    src: local('Pretendard Bold'), url(font/woff2/pretendard/Pretendard-Bold.woff2) format('woff2'), url(font/pretendard/woff/Pretendard-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-display: swap;
+    src: local('Pretendard SemiBold'), url(font/pretendard/woff2/Pretendard-SemiBold.woff2) format('woff2'), url(font/pretendard/woff/Pretendard-SemiBold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-display: swap;
+    src: local('Pretendard Regular'), url(font/pretendard/woff2/Pretendard-Regular.woff2) format('woff2'), url(font/pretendard/woff/Pretendard-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-display: swap;
+    src: local('Pretendard Light'), url(font/pretendard/woff2/Pretendard-Light.woff2) format('woff2'), url(font/pretendard/woff/Pretendard-Light.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Fusskia Demo';
+    src: url('font/fusskiademo/FusskiaDemo-Regular.eot');
+    src: url('font/fusskiademo/FusskiaDemo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/fusskiademo/FusskiaDemo-Regular.woff2') format('woff2'),
+        url('font/fusskiademo/FusskiaDemo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
