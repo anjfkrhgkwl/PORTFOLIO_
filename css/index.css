@@ -75,7 +75,7 @@ h2::before {
 
 .main_page {
     opacity: 1;
-    transition: 1s;
+    transition: 2.5s;
     transform: translateY(0%);
     overflow: hidden;
 }
@@ -1137,7 +1137,7 @@ h2::before {
     .graphicdesign .inner .list_wrap .all_box {
         width: 100%;
     }
-    
+
     .graphicdesign .inner .list_wrap {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 464px 146px 288px 146px 146px 110px 325px 146px 110px 146px;
