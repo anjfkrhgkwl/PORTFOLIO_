@@ -75,7 +75,7 @@ h2::before {
 
 .main_page {
     opacity: 1;
-    transition: 2.5s;
+    transition: 2s;
     transform: translateY(0%);
     overflow: hidden;
 }

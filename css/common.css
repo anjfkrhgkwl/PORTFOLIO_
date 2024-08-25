@@ -150,7 +150,7 @@ body {
 }
 .hide {
     transform: translateY(-100%);
-    transition: 0.8s;
+    transition: 1.5s;
 }
 .loding {
     width: 100%;
