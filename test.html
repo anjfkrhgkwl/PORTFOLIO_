@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/test.css">
+
+    <script>
+        $(function(){
+            let box = $('.all_box')
+            let clickBox = $('.click_box')
+            let bigImage = $('.big_image img')
+            let imageList = $('.image_list')
+            let imageSrc = $('.image_list img')
+            let boxClose = $('.click_box .close_btn')
+            let prevBtn = $('.prev_btn')
+            let nextBtn = $('.next_btn')
+
+            box.click(function(){
+                //alert('on')
+                clickBox.addClass('click');
+            });
+            boxClose.click(function(){
+                //alert('off')
+                clickBox.removeClass('click');
+            })
+
+            
+            for(let i = 0; i < imageList.length; i++) {
+                imageList[i].addEventListener('click', () => {
+                    //alert('on')
+                    console.log(imageSrc[i].src)
+                    bigImage.src = imageSrc[i].src;
+                });
+
+                prevBtn.click(function(){
+                    i--
+                    if(i < 0){
+                        i = imageList.length -1
+                    } 
+                    console.log(i)
+                    bigImage.src = imageList[i].src;
+                })
+            };
+
+            for(let i = 0; i < box.length; i++) {
+                let boxImage = $('.image > figure img')
+                let boxImageHover = $('.hover_image img')
+
+            }
+
+        });
+    </script>
+</head>
+<body>
+    <div class="graphicdesign">
+        <div class="inner">
+            <div class="list_wrap">
+                <div class="ps_box box01 all_box box_num01">
+                    <div class="box_title">
+                        <p>Photoshop</p>
+                    </div><!-- .box_title end -->
+                    <div class="image">
+                        <figure><img src="img/Ps-poster01.jpg" alt="photoshop_poster"></figure>
+                        <div class="hover_image">
+                            <figure><img src="img/Ps-poster01-hover.jpg" alt="hover_image"></figure>
+                        </div><!-- .hover_image end -->
+                    </div><!-- .image end -->
+                </div><!-- .ps_box .box01 직사각형 end -->
+
+                <div class="click_box">
+                    <div class="close_btn">
+                        <div class="close_icon"></div>
+                    </div><!-- .close_icon -->
+
+                    <div class="big_image">
+                        <figure><img src="img/Ps-poster01.jpg" alt="photoshop_poster"></figure>
+                    </div><!-- big_image end -->
+                    <div class="small_image_wrap">
+                        <div class="image_list">
+                            <figure>
+                                <img src="img/Ps-poster01.jpg" alt="photoshop_poster">
+                            </figure>
+                        </div> <!-- .image_list end -->
+                        <div class="image_list">
+                            <figure>
+                                <img src="img/Ps-poster01-hover.jpg" alt="photoshop_poster_hover">
+                            </figure>
+                        </div> <!-- .image_list end -->
+                    </div><!-- .small_image_wrap end -->
+
+                    <div class="slide_btn">
+                        <div class="prev_btn">
+                            <div class="icon">
+                                <div><span>icon</span></div>
+                                <div><span>icon</span></div>
+                            </div><!-- .icon end -->
+                        </div><!-- .prev_btn end -->
+
+                        <div class="next_btn">
+                            <div class="icon">
+                                <div><span>icon</span></div>
+                                <div><span>icon</span></div>
+                            </div><!-- .icon end -->
+                        </div><!-- .next_btn end -->
+                    </div><!-- .slide_btn end -->
+                </div><!-- click_box end -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

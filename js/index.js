@@ -1,10 +1,10 @@
 $(function () {
-    window.onload = function () {
+    /* window.onload = function () {
         $('html,body').animate({
             scrollTop: 0
         }, 400);
         return false;
-    } //새로고침하면 스크롤 상단으로 이동
+    } //새로고침하면 스크롤 상단으로 이동 */
 
     let tabMenu = $('.tab_menu li');
     let tabList = $('.tab_list');
@@ -37,7 +37,7 @@ $(function () {
     $(window).scroll(function () {
         let scrollBar = $(window).scrollTop();
         console.log(scrollBar);
-        if (scrollBar > webDesignTop + 50 && scrollBar < itemTop - 600) {
+        if (scrollBar > webDesignTop + 150 && scrollBar < itemTop - 600) {
             tabMenuFixed.addClass('active');
             header.children('.header').addClass('active')
         } else {
@@ -54,5 +54,10 @@ $(function () {
             scrollTop: aboutConst.offset().top
         }, 2000, 'swing');
     });
+
+    let contactLink = $('.contact_link_none a');
+    contactLink.click(function (event) {
+        event.preventDefault();
+    }) //클릭 이벤트 무시
 
 });

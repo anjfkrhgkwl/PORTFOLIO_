@@ -22,22 +22,23 @@ body {
 }
 .right_bar .right_bar_inner {}
 .right_bar .right_bar_inner .contact_btn {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: var(--color-p);
     border-radius: 50%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
-.right_bar .right_bar_inner .contact_btn h4 {
-    font-size: 14px;
-    font-family: var(--font-fusskiademo);
-    color: var(--color-w);
-    text-align: center;
-    line-height: 80px;
-    font-weight: var(--font-regular);
-    letter-spacing: 1px;
+.right_bar .right_bar_inner .contact_btn figure {
+    height: 30px;
 }
+.right_bar .right_bar_inner .contact_btn figure img {
+    height: 100%;
+}
+
 .right_bar .right_bar_inner .contact_box {
     width: 0%;
     height: 130px;
@@ -117,16 +118,18 @@ body {
 }
 
 .right_bar .right_bar_inner .intro_up {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 1px solid var(--color-b);
     position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: var(--color-w);
 }
 .right_bar .right_bar_inner .intro_up .up_icon {
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
     border-bottom: 2px solid var(--color-b);
     border-left: 2px solid var(--color-b);
     border-radius: 2px;
@@ -332,4 +335,31 @@ body {
     font-family: var(--font-fusskiademo);
     text-align: center;
     letter-spacing: 3px;
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+    .header .header_inner {
+        justify-content: center;
+    }
+    .logo {
+        display: none;
+    }
+    .header .header_inner .pc_nav .gnb > li .depth01 {
+        letter-spacing: 1.5px;
+    }
+
+    .footer .footer_inner {
+        padding: 50px 0;
+    }
+    .footer .footer_inner .list li {
+        font-size: 16px;
+    }
+    .right_bar {
+        bottom: 30px;
+        right: 30px;
+    }
+    
 }
