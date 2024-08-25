@@ -98,7 +98,7 @@ h2 {
 .main_page .main_inner .portfolio_title span.o2 {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
-    animation: o2-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+    animation: o2-anim 7s infinite cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 @keyframes o2-anim {
@@ -115,7 +115,7 @@ h2 {
 .main_page .main_inner .portfolio_title span.r3 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    animation: r3-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+    animation: r3-anim 7s infinite cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 @keyframes r3-anim {
@@ -134,7 +134,7 @@ h2 {
     padding-left: 5px;
     margin-left: 1rem;
     margin-right: 1rem;
-    animation: t4-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+    animation: t4-anim 7s infinite cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 @keyframes t4-anim {
@@ -152,7 +152,7 @@ h2 {
     padding-right: 20px;
     margin-left: 1rem;
     margin-right: 1rem;
-    animation: f5-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+    animation: f5-anim 7s infinite cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 @keyframes f5-anim {
@@ -169,7 +169,7 @@ h2 {
 .main_page .main_inner .portfolio_title span.o6 {
     margin-left: 2rem;
     margin-right: 3rem;
-    animation: o6-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+    animation: o6-anim 7s infinite cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 @keyframes o6-anim {
@@ -186,7 +186,7 @@ h2 {
 .main_page .main_inner .portfolio_title span.l7 {
     margin-left: 2rem;
     margin-right: 3rem;
-    animation: l7-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+    animation: l7-anim 7s infinite cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 @keyframes l7-anim {
@@ -203,7 +203,7 @@ h2 {
 .main_page .main_inner .portfolio_title span.i8 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    animation: i8-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+    animation: i8-anim 7s infinite cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 @keyframes i8-anim {
@@ -225,7 +225,7 @@ h2 {
 .main_page .main_inner .portfolio_title .point {
     top: -40px;
     left: 32px;
-    animation: point_anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+    animation: point_anim 7s infinite cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 @keyframes point_anim {
