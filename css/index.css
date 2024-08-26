@@ -446,11 +446,11 @@ h2::before {
 
 .about .inner .profile_box .profile_info .info {
     display: flex;
-    gap: 30px;
     margin-bottom: 15px;
 }
 
 .about .inner .profile_box .profile_info .info p {
+    width: 100px;
     font-size: 18px;
     font-weight: var(--font-light);
 }
@@ -459,18 +459,6 @@ h2::before {
     display: block;
     font-size: 18px;
     font-weight: var(--font-regular);
-}
-
-.about .inner .profile_box .profile_info .info.birth {
-    gap: 32px;
-}
-
-.about .inner .profile_box .profile_info .info.base {
-    gap: 38px;
-}
-
-.about .inner .profile_box .profile_info .info.phone {
-    gap: 28px;
 }
 
 .about .inner .profile_box .profile_education {
