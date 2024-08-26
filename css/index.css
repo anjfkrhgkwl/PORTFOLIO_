@@ -741,10 +741,10 @@ h2::before {
 .webdesign .inner .tab_list .list_item .item .item_info .info {
     display: flex;
     align-items: center;
-    gap: 15px;
 }
 
 .webdesign .inner .tab_list .list_item .item .item_info .info p {
+    width: 110px;
     font-weight: var(--font-semibold);
 }
 
