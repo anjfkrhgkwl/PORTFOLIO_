@@ -52,7 +52,7 @@ $(function () {
         let aboutConst = $('.about');
         $('html, body').animate({
             scrollTop: aboutConst.offset().top
-        }, 2500, 'swing');
+        }, 1800, 'swing');
     });
 
     let contactLink = $('.contact_link_none a');
