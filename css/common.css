@@ -364,6 +364,17 @@ body {
     
 }/* 1024px */
 
+@media screen and (max-width:960px) {
+    .header .header_inner {
+        width: calc(100% - 60px);
+        margin: 0 auto;
+    }
+    .header .header_inner .pc_nav .gnb>li .depth01 {
+        font-size: 23px;
+        padding: 0 25px;
+    }
+}
+
 @media screen and (max-width:890px) {
     .pc {
         display: none;
@@ -391,7 +402,7 @@ body {
     .mobile_nav {
         position: absolute;
         top: 100%;
-        right: 15px;
+        right: 5%;
         padding-top: 5px;
     }
     .mobile_nav .gnb {
@@ -519,6 +530,9 @@ body {
 }
 
 @media screen and (max-width:480px) {
+    .header .header_inner {
+        width: calc(100%- 30px);
+    }
     .contact .inner .contact_list .list h6 {
         font-size: 24px;
     }

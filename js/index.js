@@ -60,4 +60,17 @@ $(function () {
         event.preventDefault();
     }) //클릭 이벤트 무시
 
+    let mainText = $('.text_wrap');
+    setInterval(changeTime, 12000)
+    
+    function changeTime() {
+        if(mainText.not('.change')) {
+            mainText.addClass('change')
+        }
+        setTimeout(() => {
+            mainText.removeClass('change');
+        }, 6000)
+    }
+   
+
 });
