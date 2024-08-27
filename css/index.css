@@ -999,8 +999,7 @@ h2::before {
 
 .contact .inner .contact_list .list h6 {
     font-size: 40px;
-    font-family: var(--font-fusskiademo);
-    margin-top: 8px;
+    font-family: var(--font-pretendard);
     width: 170px;
     white-space: nowrap;
 }
@@ -1008,7 +1007,6 @@ h2::before {
 .contact .inner .contact_list .list strong {
     font-size: 24px;
     font-weight: var(--font-regular);
-    margin-top: 3px;
 }
 
 
