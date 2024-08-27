@@ -24,7 +24,7 @@ body {
 .right_bar .right_bar_inner .contact_btn {
     width: 60px;
     height: 60px;
-    background-color: var(--color-p);
+    background-color: var(--color-b);
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -48,7 +48,7 @@ body {
     right: 110px;
     z-index: 99999;
 
-    background-color: var(--color-p);
+    background-color: var(--color-b);
     transform: translateY(-50%);
     border-radius: 15px;
 
@@ -89,6 +89,7 @@ body {
     display: block;
     font-size: 20px;
     letter-spacing: 4px;
+    font-weight: var(--font-regular);
     font-weight: var(--font-regular);
 }
 .right_bar .right_bar_inner .contact_box .close_btn {
@@ -362,4 +363,158 @@ body {
         right: 30px;
     }
     
+}/* 1024px */
+
+@media screen and (max-width:890px) {
+    .pc {
+        display: none;
+    } 
+    .mobile {
+        display: block;
+    }
+    .logo {
+        display: block;
+    }
+    .header {
+        height: 80px;
+    }
+    .header.active {
+        height: 60px;
+    }
+    .header .header_inner .logo {
+        transition: 0.3s;
+    }
+    .header.active .header_inner .logo {
+        font-size: 25px;
+        transition: 0.3s;
+    }
+    
+    .mobile_nav {
+        position: absolute;
+        top: 100%;
+        right: 15px;
+        padding-top: 5px;
+    }
+    .mobile_nav .gnb {
+        background-color: var(--color-p);
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+    .mobile_nav .gnb > li {}
+    .mobile_nav .gnb > li .depth01 {
+        font-size: 22px;
+        color: var(--color-w);
+        padding: 15px 15px;
+        display: block;
+        text-align: center;
+        font-weight: var(--font-regular);
+        letter-spacing: 1px;
+    }
+
+    .header .header_inner {
+        justify-content: space-between;
+    }
+    .mobile_openbtn {}
+    .mobile_openbtn .menu_icon {
+        position: relative;
+        width: 23px;
+        height: 23px;
+    }
+    .mobile_openbtn .menu_icon div {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-b);
+        position: absolute;
+    }
+    .mobile_openbtn .menu_icon div:nth-child(1) {
+        top: 4px;
+    }
+    .mobile_openbtn .menu_icon div:nth-child(2) {
+        top: 10px;
+    }
+    .mobile_openbtn .menu_icon div:nth-child(3) {
+        top: 16px;
+    }
+    .mobile_openbtn .menu_icon div span {
+        position: absolute;
+        left: -9999999999999px;
+    }
+
+    .mobile_openbtn.open {}
+    .mobile_openbtn.open .menu_icon div:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+        transition: 0.3s;
+    }
+    .mobile_openbtn.open .menu_icon div:nth-child(2) {
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .mobile_openbtn.open .menu_icon div:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+        transition: 0.3s;
+    }
+
+    .header .header_inner .logo {
+        font-size: 35px;
+    }
+
+}/* 890px */
+
+@media screen and (max-width:767px) {
+    .header .header_inner .logo {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .right_bar .right_bar_inner .contact_box.active {
+        width: 380px;
+        padding: 15px 25px;
+    }
+    .right_bar .right_bar_inner .contact_box .text ul li h6 {
+        font-size: 16px;
+    }
+    .right_bar .right_bar_inner .contact_box .text ul li strong {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .footer .footer_inner .list li {
+        font-size: 14px;
+    }
+    .footer .footer_inner span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .right_bar .right_bar_inner .contact_btn {
+        width: 55px;
+        height: 55px;
+    }
+    .right_bar .right_bar_inner .contact_btn figure {
+        height: 25px;
+    }
+    .right_bar .right_bar_inner .intro_up {
+        width: 55px;
+        height: 55px;
+    }
+    .right_bar .right_bar_inner .intro_up .up_icon {
+        width: 15px;
+        height: 15px;
+    }
+    .right_bar .right_bar_inner .contact_box .text ul li strong {
+        font-size: 14px;
+    }
+    .right_bar .right_bar_inner .contact_box.active {
+        width: 350px;
+        padding: 10px 20px;
+    }
+    .right_bar .right_bar_inner .contact_box {
+        right: 0;
+        top: -55%;
+    }
+
 }

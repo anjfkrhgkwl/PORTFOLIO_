@@ -1,7 +1,7 @@
 <body>
     <script>
         $('.header a').click(function (event) {
-            event.preventDefault();
+            event.preventDefault.depth01
         }) //클릭 이벤트 무시
 
         let headerMenu = $('.gnb li');
@@ -12,6 +12,23 @@
             $('html, body').animate({
                 scrollTop: section.offset().top - 160
             }, 2000, 'swing');
+        });
+
+        let mobileNav = $('.mobile_nav');
+        let mobileBtn = $('.mobile_openbtn');
+        mobileNav.not('.open').stop().slideUp();
+        
+        mobileBtn.click(function(){
+            //alert('o')
+            mobileNav.toggleClass('open');
+            mobileBtn.toggleClass('open');
+
+            if(mobileNav.hasClass('open')) {
+                mobileNav.stop().slideDown(500);
+            } else {
+                mobileNav.stop().slideUp(500);
+            }
+
         });
 
         
@@ -41,11 +58,11 @@
 
             <nav class="mobile mobile_nav nav">
                 <ul class="gnb">
-                    <li><a href="#" class="detph01">Intro</a></li>
-                    <li><a href="#" class="detph01">About</a></li>
-                    <li><a href="#" class="detph01">Web Design</a></li>
-                    <li><a href="#" class="detph01">Graphic Design</a></li>
-                    <li><a href="#" class="detph01">Contact</a></li>
+                    <li><a href="#" class="depth01">Intro</a></li>
+                    <li><a href="#" class="depth01">About</a></li>
+                    <li><a href="#" class="depth01">Web Design</a></li>
+                    <li><a href="#" class="depth01">Graphic Design</a></li>
+                    <li><a href="#" class="depth01">Contact</a></li>
                 </ul><!-- .gnb end -->
             </nav><!-- mobile .mobile_nav nav end -->
 
