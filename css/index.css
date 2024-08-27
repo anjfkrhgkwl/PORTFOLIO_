@@ -978,6 +978,14 @@ h2::before {
     border: 1px solid var(--color-b);
     border-radius: 20px;
 }
+.contact .inner .contact_list .contact_github {
+    transition: 0.3s;
+}
+.contact .inner .contact_list .contact_github:hover {
+    background-color: var(--color-b);
+    color: var(--color-w);
+     transition: 0.3s;
+}
 
 .contact .inner .contact_list .list a {
     display: flex;
@@ -998,9 +1006,9 @@ h2::before {
 }
 
 .contact .inner .contact_list .list h6 {
-    font-size: 40px;
+    font-size: 35px;
     font-family: var(--font-pretendard);
-    width: 170px;
+    width: 160px;
     white-space: nowrap;
 }
 
