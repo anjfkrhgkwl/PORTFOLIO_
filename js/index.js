@@ -61,7 +61,7 @@ $(function () {
     }) //클릭 이벤트 무시
 
     let mainText = $('.text_wrap');
-    setInterval(changeTime, 12000)
+    setInterval(changeTime, 11000)
     
     function changeTime() {
         if(mainText.not('.change')) {
