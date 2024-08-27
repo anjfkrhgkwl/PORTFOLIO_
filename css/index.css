@@ -1045,7 +1045,6 @@ h2::before {
     justify-content: left;
     align-items: center;
     padding: 20px;
-    column-gap: 20px;
     width: 464px;
 }
 
@@ -1063,6 +1062,8 @@ h2::before {
     font-size: 40px;
     font-family: var(--font-fusskiademo);
     margin-top: 8px;
+    width: 170px;
+    white-space: nowrap;
 }
 
 .contact .inner .contact_list .list strong {
@@ -1081,9 +1082,11 @@ h2::before {
     .main_page .main_inner .portfolio_title span {
         font-size: 65px;
     }
+
     .main_page .main_inner .portfolio_title span.t4 {
         padding-right: 20px;
     }
+
     .point {
         width: 30px;
         height: 30px;
@@ -1106,18 +1109,22 @@ h2::before {
     .webdesign .inner .tab_list .list_item .item_image {
         height: 300px;
     }
+
     .webdesign .inner .tab_list .list_item .item .item_title h4 {
         font-size: 30px;
     }
+
     .webdesign .inner .tab_list .list_item .item .item_title p {
         font-size: 16px;
         height: 40px;
         line-height: 1.2;
         word-break: keep-all;
     }
+
     .webdesign .inner .tab_list .list_item .item .item_line {
         margin-top: 5px;
     }
+
     .webdesign .inner .tab_list .list_item .item_image .hover_text figure {
         height: 100%;
     }
@@ -1139,15 +1146,19 @@ h2::before {
         width: 100%;
         height: 100%;
     }
+
     .graphicdesign .inner .list_wrap .box_num05:hover {
         transform: rotateY(0deg);
     }
+
     .graphicdesign .inner .list_wrap .box02 {
         height: auto;
     }
+
     .graphicdesign .inner .list_wrap .box01 {
         height: auto;
     }
+
     .graphicdesign .inner .list_wrap .all_box .image .hover_image {
         width: 100%;
     }
@@ -1199,6 +1210,7 @@ h2::before {
     .webdesign .inner .tab_list .list_item .item .qr_code .code_image {
         width: 75px;
     }
+
     .webdesign .inner .tab_list .list_item .item .qr_code p {
         display: none;
     }
@@ -1207,30 +1219,33 @@ h2::before {
         flex-direction: column;
         row-gap: 20px;
     }
+
     .contact .inner .contact_list .list a {
-        column-gap: 35px;
         width: 100%;
     }
+
     .contact .inner .contact_list .list h6 {
         white-space: nowrap;
     }
+
     .contact .inner .contact_list .list strong {
         letter-spacing: 2px;
     }
-    .contact .inner .contact_list .contact_email h6 {
-        margin-right: 20px;
-    }
 
-}/* 1024px */
+}
+
+/* 1024px */
 
 @media screen and (max-width:960px) {
-    .header .header_inner .pc_nav .gnb > li .depth01 {
+    .header .header_inner .pc_nav .gnb>li .depth01 {
         font-size: 23px;
         padding: 0 25px;
     }
+
     .about .inner .profile_box .profile_info {
         flex-wrap: wrap;
     }
+
     .about .inner .profile_box .profile_skill .skill_wrap {
         justify-content: left;
         column-gap: 25px;
@@ -1241,12 +1256,15 @@ h2::before {
         grid-template-rows: 439px 141px 270px 311px 99px 310px 270px 141px;
         /* 439px 141px 270px 311px 99px 310px 270px 141px; */
     }
+
     .graphicdesign .inner .list_wrap .box01 {
         height: 610px;
     }
+
     .graphicdesign .inner .list_wrap .box02 {
         height: 439px;
     }
+
     .list_wrap .box_num06 {
         grid-column: 1 / 1;
         grid-row: 5 / 7;
@@ -1271,80 +1289,101 @@ h2::before {
         grid-column: 1 / 1;
         grid-row: 9 / 11;
     }
-}/* 960px */
+}
+
+/* 960px */
 
 @media screen and (max-width:890px) {
     .webdesign .inner .tab_menu.active {
         top: 60px;
     }
+
     .webdesign .inner .tab_list .list_item {
         width: 100%;
     }
+
     .webdesign .inner .tab_list .list_item .item_image {
         height: 485px;
     }
+
     .webdesign .inner .tab_list .list_item .item {
         margin-top: 15px;
     }
+
     .webdesign .inner .tab_list .list_item .item .item_title p {
         height: auto;
     }
+
     .webdesign .inner .tab_list .list_item .item .item_line {
         margin: 15px 0;
     }
+
     .webdesign .inner .tab_list .list_item .item .qr_code p {
         display: block;
         width: 85px;
     }
+
     .webdesign .inner .tab_list .list_item .item .qr_code .code_image {
         width: 85px;
     }
+
     .graphicdesign .inner .list_wrap .all_box .main_title h5 {
         font-size: 50px;
     }
+
     .graphicdesign .inner .list_wrap .all_box .main_title h6 {
         font-size: 23px;
     }
-}/* 890px */
+}
+
+/* 890px */
 
 @media screen and (max-width:767px) {
     .section {
         margin-top: 150px;
     }
+
     h2 {
         font-size: 35px;
     }
+
     h2::before {
         width: 30px;
         height: 30px;
         top: -16px;
         left: -13px;
     }
-    
+
     .graphicdesign .inner .list_wrap .box01 {
         height: 490px;
     }
+
     .graphicdesign .inner .list_wrap .box02 {
         height: 340px;
     }
-    
+
     .graphicdesign .inner .list_wrap {
-        grid-template-rows: 340px 120px 190px 270px 40px 270px 190px 120px 340px ;
+        grid-template-rows: 340px 120px 190px 270px 40px 270px 190px 120px 340px;
     }
+
     .graphicdesign .inner .list_wrap .all_box {
         border-radius: 15px;
     }
+
     /* 340px 120px 190px 270px 40px 270px 190px 120px 340px */
     .list_wrap .box_num09 {
         grid-row: 8 / 10;
     }
+
     .list_wrap .box_num10 {
         grid-row: 9 / 10;
     }
+
     .graphicdesign .inner .list_wrap .all_box .box_title {
         top: 15px;
         left: 15px;
     }
+
     .graphicdesign .inner .list_wrap .all_box .box_title p {
         font-size: 15px;
         border-radius: 8px;
@@ -1353,49 +1392,69 @@ h2::before {
     .webdesign .inner .tab_menu {
         gap: 15px;
     }
+
     .webdesign .inner .tab_menu li {
         padding: 7px 18px;
         font-size: 15px;
     }
+
     .webdesign .inner .tab_menu.active li {
         font-size: 14px;
     }
+
     .about {
         height: auto;
         margin-top: 150px;
     }
+
     .about .inner {
         flex-direction: column;
         justify-content: center;
         row-gap: 100px;
         height: auto;
     }
+
     .about .inner .profile_box .title {
         display: flex;
         justify-content: center;
     }
+
     .about .inner .profile_box .profile_info .info p {
         font-size: 16px;
     }
+
     .about .inner .profile_box .profile_info .info strong {
         font-size: 16px;
     }
+
     .about .inner .profile_box .profile_education .education_info p {
         font-size: 16px;
     }
-    .about .inner .profile_box .profile_education h3, .about .inner .profile_box .profile_skill h3 {
+
+    .about .inner .profile_box .profile_education h3,
+    .about .inner .profile_box .profile_skill h3 {
         font-size: 16px;
     }
-}/* 767px */
+}
+
+/* 767px */
 
 @media screen and (max-width:640px) {
     .webdesign .inner .tab_list .list_item .item_image {
         height: 370px;
+        border-radius: 20px;
     }
+
+    .webdesign .inner .tab_list .list_item .item_image .tag_list {
+        top: 15px;
+        left: 15px;
+    }
+
     .webdesign .inner .tab_list .list_item .item_image .tag_list .tag {
         padding: 5px 12px;
         border-radius: 7px;
     }
+
     .webdesign .inner .tab_list .list_item .item_image .tag_list .tag p {
         font-size: 14px;
     }
@@ -1403,58 +1462,280 @@ h2::before {
     .graphicdesign .inner .list_wrap .all_box .main_title h5 {
         font-size: 35px;
     }
+
     .graphicdesign .inner .list_wrap .all_box .main_title h6 {
         font-size: 16px;
     }
+
     .graphicdesign .inner .list_wrap .box01 {
         height: 400px;
     }
+
     .graphicdesign .inner .list_wrap .box02 {
         height: 280px;
     }
+
     .graphicdesign .inner .list_wrap {
         grid-template-rows: 280px 90px 160px 210px 40px 210px 160px 90px 280px;
     }
+
     /* 280px 90px 160px 210px 40px 210px 160px 90px 280px */
     .contact .inner .contact_list .list a {
         padding: 15px;
     }
+
     .contact .inner .contact_list .list h6 {
         font-size: 30px;
     }
+
     .contact .inner .contact_list .list strong {
         font-size: 18px;
     }
+
     .webdesign .inner .tab_menu {
-        gap: 7px;
+        column-gap: 10px;
+        row-gap: 5px;
         flex-wrap: wrap;
     }
+
     .webdesign .inner .tab_menu li {
         font-size: 14px;
         border-radius: 7px;
     }
+
     .webdesign .inner .tab_menu li:first-child {
-        margin-right: 300px;
+        margin-right: 400px;
     }
-}/* 640px */
+}
+
+/* 640px */
+
+@media screen and (max-width:620px) {
+    .webdesign .inner .tab_list .list_item .item_image {
+        height: 330px;
+    }
+}
 
 @media screen and (max-width:540px) {
+    .webdesign .inner .tab_list .list_item .item_image {
+        height: 290px;
+        border-radius: 15px;
+    }
+
     .graphicdesign .inner .list_wrap {
         grid-template-rows: 235px 65px 140px 160px 45px 160px 140px 63px 235px;
     }
+
     .graphicdesign .inner .list_wrap .box01 {
         height: 330px;
     }
+
     .graphicdesign .inner .list_wrap .box02 {
         height: 235px;
     }
+
     .graphicdesign .inner .list_wrap .all_box .main_title h5 {
         font-size: 28px;
     }
+
     .graphicdesign .inner .list_wrap .all_box .main_title h6 {
         font-size: 14px;
         word-break: keep-all;
         white-space: wrap;
         text-align: center;
     }
+
+    .webdesign .inner .tab_list .list_item .item .qr_code p {
+        display: none;
+    }
+
+    .webdesign .inner .tab_list .list_item .item .qr_code .code_image {
+        width: 60px;
+    }
+
+    .webdesign .inner .tab_list .list_item .item .qr_code {
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+/* 540px */
+
+@media screen and (max-width:500px) {
+    .webdesign .inner .tab_list .list_item .item .item_info .info {
+        align-items: flex-start;
+    }
+
+    .webdesign .inner .tab_list .list_item .item .item_info .info ul {
+        flex-wrap: wrap;
+    }
+
+    .webdesign .inner .tab_list .list_item .item .item_info {
+        row-gap: 12px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    .webdesign .inner .tab_list .list_item .item_image .hover_text p {
+        font-size: 30px;
+    }
+
+    .webdesign .inner .tab_list .list_item .item_btn .btn a {
+        padding: 8px 25px;
+        height: auto;
+    }
+
+    .webdesign .inner .tab_list .list_item .item_btn .btn p {
+        font-size: 16px;
+    }
+
+    .webdesign .inner .tab_list .list_item .item_image {
+        height: 260px;
+    }
+
+    .webdesign .inner .tab_list .list_item .item .item_title h4 {
+        font-size: 28px;
+    }
+
+    .webdesign .inner .tab_list {
+        row-gap: 50px;
+    }
+
+    .webdesign .inner .tab_list .list_item .item .item_title p {
+        font-size: 15px;
+    }
+
+    .webdesign .inner .tab_list .list_item .item .qr_code {
+        bottom: -60px;
+    }
+
+    .webdesign .inner .tab_list .list_item .item .item_info .info ul li {
+        font-size: 15px;
+    }
+
+    .webdesign .inner .tab_list .list_item .item .item_info .info p {
+        font-size: 15px;
+    }
+
+    .graphicdesign .inner .list_wrap {
+        grid-template-rows: 190px 70px 100px 160px 10px 160px 100px 70px 190px;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .graphicdesign .inner .list_wrap .box01 {
+        height: 280px;
+    }
+
+    .graphicdesign .inner .list_wrap .box02 {
+        height: 190px;
+    }
+    .graphicdesign .inner .list_wrap .all_box {
+        border-radius: 10px;
+    }
+    .graphicdesign .inner .list_wrap .all_box .box_title p {
+        font-size: 13px;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+
+    .graphicdesign .inner .list_wrap .all_box .box_title {
+        top: 10px;
+        left: 10px;
+    }
+
+
+}
+
+/* 480px */
+
+@media screen and (max-width:450px) {
+    .section {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+    .about .inner {
+        row-gap: 50px;
+    }
+
+    .about .inner .profile_box .profile_info {
+        margin-bottom: 20px;
+    }
+
+    .about .inner .profile_box .profile_education {
+        margin-bottom: 25px;
+    }
+
+    .webdesign .inner .title {
+        margin-bottom: 50px;
+    }
+
+    .webdesign .inner .tab_menu li:first-child {
+        margin-right: 0;
+    }
+
+    .webdesign .inner .tab_list .list_item .item_image {
+        height: 240px;
+    }
+
+    .contact .inner .contact_list .list h6 {
+        font-size: 24px;
+        width: 100px;
+    }
+
+    .contact .inner .contact_list .list strong {
+        font-size: 16px;
+    }
+
+    .contact .inner .contact_list {
+        margin-top: 50px;
+    }
+}/* 450px */
+
+@media screen and (max-width:430px) {
+    .graphicdesign .inner .list_wrap {
+        grid-template-rows: 170px 50px 105px 115px 40px 115px 105px 50px 170px;
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+    .graphicdesign .inner .list_wrap .box01 {
+        height: 235px;
+    }
+    .graphicdesign .inner .list_wrap .box02 {
+        height: 170px;
+    }
+    
+    
+}/* 430px */
+
+@media screen and (max-width:414px) {
+    .webdesign .inner .tab_list .list_item .item_image .tag_list {
+        top: 10px;
+        left: 10px;
+    }
+    .webdesign .inner .tab_list .list_item .item_image {
+        height: 210px;
+        border-radius: 10px;
+    }
+
+    .contact .inner .contact_list .list h6 {
+        width: 80px;
+        font-size: 20px;
+    }
+    .contact .inner .contact_list .list strong {
+        font-size: 15px;
+    }
+    .webdesign .inner .tab_list .list_item .item .qr_code  {
+        padding: 4px;
+    }
+    .webdesign .inner .tab_list .list_item .item .qr_code .code_image {
+        width: 45px;
+    }
+    
 }

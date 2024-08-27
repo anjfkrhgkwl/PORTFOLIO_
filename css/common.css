@@ -327,13 +327,12 @@ body {
     margin-bottom: 20px;
 }
 .footer .footer_inner .list li {
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 2px;
 }
 .footer .footer_inner span {
     display: block;
-    font-size: 20px;
-    font-family: var(--font-fusskiademo);
+    font-size: 16px;
     text-align: center;
     letter-spacing: 3px;
 }
@@ -396,7 +395,7 @@ body {
         padding-top: 5px;
     }
     .mobile_nav .gnb {
-        background-color: var(--color-p);
+        background-color: var(--color-b);
         padding: 25px 20px;
         border-radius: 20px;
     }
@@ -509,12 +508,75 @@ body {
         font-size: 14px;
     }
     .right_bar .right_bar_inner .contact_box.active {
-        width: 350px;
-        padding: 10px 20px;
+        width: 380px;
+        padding: 10px 25px;
     }
     .right_bar .right_bar_inner .contact_box {
         right: 0;
         top: -55%;
     }
 
+}
+
+@media screen and (max-width:480px) {
+    .contact .inner .contact_list .list h6 {
+        font-size: 24px;
+    }
+    .contact .inner .contact_list .list strong {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:450px) {
+    .right_bar .right_bar_inner .contact_box.active {
+        width: 300px;
+        height: auto;
+        padding: 20px 15px;
+    }
+    .right_bar .right_bar_inner .contact_box .text ul li {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .right_bar .right_bar_inner .contact_box .text ul li h6 {
+        color: var(--color-g02);
+    }
+    .right_bar .right_bar_inner .contact_box .text ul li strong {
+        font-size: 16px;
+    }
+    .footer .footer_inner {
+        padding: 30px 0;
+    }
+    .footer .footer_inner .list {
+        margin-bottom: 15px;
+    }
+    .footer .footer_inner .list li {
+        font-size: 11px;
+        text-align: center;
+        word-break: keep-all;
+        letter-spacing: 1px;
+    }
+    .footer .footer_inner span {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .header .header_inner .logo {
+        font-size: 24px;
+    }
+    .mobile_nav .gnb {
+        padding: 20px 10px;
+        border-radius: 10px;
+    }
+    .mobile_nav .gnb > li .depth01 {
+        font-size: 20px;
+        padding: 15px 15px;
+    }
+    .right_bar {
+        bottom: 15px;
+        right: 15px;
+    } 
+    .right_bar .right_bar_inner .intro_up {
+        margin-top: 15px;
+    }
 }
