@@ -309,6 +309,38 @@ body {
 
 /*************************************** footer *************************************/
 
+.footer_download {}
+.footer_download .footer_inner {}
+.footer_download .footer_inner .download_btn {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_download .footer_inner .download_btn > div {
+    width: 50%;
+    border-top: 1px solid var(--color-b);
+}
+.footer_download .footer_inner .download_btn > div a {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.footer_download .footer_inner .download_btn > div:hover a {
+    background-color: var(--color-b);
+    color: var(--color-w);
+    transition: 0.3s;
+}
+.footer_download .footer_inner .download_btn > div a span {
+    font-size: 18px;
+}
+.footer_download .footer_inner .download_btn .resume_btn {
+    border-right: 1px solid var(--color-b);
+}
+.footer_download .footer_inner .download_btn .portfolio_btn {}
+
 .footer {
     border-top: 1px solid var(--color-b);
 }
@@ -373,6 +405,14 @@ body {
         font-size: 23px;
         padding: 0 25px;
     }
+    .footer_download .footer_inner .download_btn > div:hover a {
+        background-color: var(--color-w);
+        color: var(--color-b);
+    }
+    .footer_download .footer_inner .download_btn .portfolio_btn a {
+        background-color: var(--color-b);
+        color: var(--color-w);
+    }
 }
 
 @media screen and (max-width:890px) {
@@ -400,6 +440,7 @@ body {
     }
     
     .mobile_nav {
+        display: none;
         position: absolute;
         top: 100%;
         right: 5%;
@@ -527,6 +568,10 @@ body {
         top: -55%;
     }
 
+    .footer_download .footer_inner .download_btn > div a span {
+        font-size: 16px;
+    }
+
 }
 
 @media screen and (max-width:480px) {
@@ -592,5 +637,8 @@ body {
     } 
     .right_bar .right_bar_inner .intro_up {
         margin-top: 15px;
+    }
+    .footer_download .footer_inner .download_btn > div a span {
+        font-size: 14px;
     }
 }
