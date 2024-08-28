@@ -541,6 +541,14 @@ h2::before {
     font-weight: var(--font-regular);
     background-color: #fafafa71;
     backdrop-filter: blur(7px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.webdesign .inner .tab_menu li:hover {
+    color: var(--color-b);
+    background-color: #eee;
+    transition: 0.3s;
 }
 
 .webdesign .inner .tab_menu.active li.on {
