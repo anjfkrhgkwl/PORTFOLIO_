@@ -511,7 +511,6 @@ h2::before {
     position: sticky;
     top: 70px;
     left: 0;
-    padding: 15px 0;
     z-index: 90;
     background-color: var(--color-w);
     transition: 0.6s;
@@ -524,11 +523,14 @@ h2::before {
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 9;
 }
 
 .webdesign .inner .tab_menu.active li {
     font-size: 16px;
-    border: none;
+    border-radius: 0;
+    border: 0;
+    padding: 15px 30px;
 }
 
 .webdesign .inner .tab_menu li {
@@ -550,10 +552,14 @@ h2::before {
     background-color: #eee;
     transition: 0.3s;
 }
+.webdesign .inner .tab_menu.active li:hover {
+    border-radius: 0;
+    background-color: #eee;
+}
 
 .webdesign .inner .tab_menu.active li.on {
-    background-color: var(--color-w);
-    color: var(--color-b);
+    background-color: var(--color-b);
+    color: var(--color-w);
 }
 
 .webdesign .inner .tab_menu li.on {
