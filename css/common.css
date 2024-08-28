@@ -140,101 +140,6 @@ body {
     transform: rotate(135deg);
 }
 
-/********************************************** loding ********************************************/
-#loding {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999999999;
-}
-.hide {
-    transform: translateY(-100%);
-    transition: 1.5s;
-}
-.loding {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 999;
-    background-color: var(--color-w);
-}
-
-.loding .loding_inner {
-    height: 100%;
-}
-
-.loding .loding_inner .loding_bg {
-    position: absolute;
-    bottom: 0%;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background: rgb(112, 133, 116);
-    background: linear-gradient(0deg, rgba(112, 133, 116, 1) 17%, rgba(174, 185, 176, 1) 58%, rgba(250, 250, 250, 1) 100%);
-}
-
-.loding .loding_inner .loding_bg span {
-    position: absolute;
-    left: -999999999999999999px;
-}
-
-.loding .loding_inner .loding_text {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    color: var(--color-b);
-}
-.loding .loding_inner .loding_text.on {
-    transition: 7s;
-    color: var(--color-w);
-}
-.loding .loding_inner .loding_text .percent {
-    font-size: 40px;
-    font-family: var(--font-fusskiademo);
-    text-align: center;
-}
-
-.loding .loding_inner .loding_text .text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 15px;
-    margin-top: 20px;
-}
-
-.loding .loding_inner .loding_text .text h1 {
-    font-size: 40px;
-    font-family: var(--font-fusskiademo);
-    letter-spacing: 4px;
-}
-
-.loding .loding_inner .loding_text .text .text_deco {
-    display: flex;
-    
-    column-gap: 10px;
-}
-.loding .loding_inner .loding_text .text .text_deco div {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: var(--color-b);
-}
-.loding .loding_inner .loding_text .text .text_deco div.on {
-    transition: 7s;
-    background-color: var(--color-w);
-}
-
-.loding .loding_inner .loding_text .text .text_deco span {
-    position: absolute;
-    left: -99999999999999999999999px;
-}
 
 /****************************************** header *************************************************/
 
@@ -253,7 +158,7 @@ body {
 }
 
 .header {
-    font-family: var(--font-fusskiademo);
+    font-family: var(--font-pretendard);
     font-weight: normal;
 
     max-width: 1440px;
