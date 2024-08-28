@@ -218,7 +218,7 @@ h2::before {
     transition: 0.9s;
 }
 .main_page .main_inner .text_box .text_wrap:hover {
-    top: -100%;
+    top: -115%;
     transition: 0.9s;
 }
 .main_page .main_inner .text_box .text_wrap h3 {
