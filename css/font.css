@@ -27,14 +27,3 @@
     font-display: swap;
     src: local('Pretendard Light'), url(font/pretendard/woff2/Pretendard-Light.woff2) format('woff2'), url(font/pretendard/woff/Pretendard-Light.woff) format('woff');
 }
-
-@font-face {
-    font-family: 'Fusskia Demo';
-    src: url('font/fusskiademo/FusskiaDemo-Regular.eot');
-    src: url('font/fusskiademo/FusskiaDemo-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/fusskiademo/FusskiaDemo-Regular.woff2') format('woff2'),
-        url('font/fusskiademo/FusskiaDemo-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; 
-}
