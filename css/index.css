@@ -1302,6 +1302,18 @@ h2::before {
 
 /* 960px */
 
+@media screen and (max-width:900px) {
+    .webdesign .inner .tab_menu {
+        gap: 15px;
+    }
+    .webdesign .inner .tab_menu.active li {
+        padding: 15px 20px;
+    }
+    .webdesign .inner .tab_menu li {
+        padding: 10px 20px;
+    }
+}
+
 @media screen and (max-width:890px) {
     .main_page .main_inner .portfolio_title .title_box {
         -webkit-box-reflect: below -24px linear-gradient(transparent, rgba(0, 0, 0, 0.089));
@@ -1651,6 +1663,12 @@ h2::before {
     }
 }/* 620px */
 
+@media screen and (max-width:570px) {
+    .webdesign .inner .tab_menu li:first-child {
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width:540px) {
     .webdesign .inner .tab_list .list_item .item_image {
         height: 290px;
@@ -1856,6 +1874,9 @@ h2::before {
 }
 
 @media screen and (max-width:414px) {
+    .webdesign .inner .tab_list .list_item .item .qr_code {
+        display: none;
+    }
     .webdesign .inner .tab_list .list_item .item_image .tag_list {
         top: 10px;
         left: 10px;
