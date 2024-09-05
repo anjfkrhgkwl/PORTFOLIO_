@@ -330,6 +330,7 @@ body {
     }
     .header .header_inner .pc_nav .gnb > li .depth01 {
         letter-spacing: 1.5px;
+        margin: 0 30px;
     }
 
     .footer .footer_inner {

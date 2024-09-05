@@ -1479,13 +1479,13 @@ h2::before {
     }
 
     .webdesign .inner .tab_menu li {
-        padding: 7px 10px;
+        padding: 10px 20px;
         font-size: 15px;
     }
 
     .webdesign .inner .tab_menu.active li {
         font-size: 14px;
-        padding: 15px 15px;
+        padding: 15px 20px;
     }
 
     .about {
@@ -1743,6 +1743,9 @@ h2::before {
         font-size: 30px;
     }
 
+    .webdesign .inner .tab_menu li {
+        padding: 10px 15px;
+    }
     .webdesign .inner .tab_list .list_item .item_image .hover_text p {
         font-size: 30px;
     }
@@ -1899,9 +1902,19 @@ h2::before {
     .main_page .main_inner .portfolio_qr_code {
         display: none;
     }
+    .webdesign .inner .tab_menu li {
+        font-size: 13px;
+    }
+    .webdesign .inner .tab_menu.active li {
+        font-size: 13px;
+        padding: 15px 15px;
+    }
 }
 
 @media screen and (max-width:414px) {
+    .webdesign .inner .tab_menu li {
+        padding: 10px 10px;
+    }
     .webdesign .inner .tab_list .list_item .item .qr_code {
         display: none;
     }
