@@ -1797,6 +1797,9 @@ h2::before {
         flex-direction: unset;
         flex-wrap: wrap;
     }
+    .webdesign .inner .tab_list .list_item.kellyz .item .item_info .info:last-child {
+        width: 100%;
+    }
 
     .graphicdesign .inner .list_wrap {
         grid-template-rows: 190px 70px 100px 160px 10px 160px 100px 70px 190px;
