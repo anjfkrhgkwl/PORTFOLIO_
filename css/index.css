@@ -1784,6 +1784,20 @@ h2::before {
         font-size: 15px;
     }
 
+    .webdesign .inner .tab_list .list_item .item .item_info .info {
+        width: 49%;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .webdesign .inner .tab_list .list_item .item .item_info {
+        row-gap: 20px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+
     .graphicdesign .inner .list_wrap {
         grid-template-rows: 190px 70px 100px 160px 10px 160px 100px 70px 190px;
         row-gap: 20px;
@@ -1936,6 +1950,15 @@ h2::before {
      }
 }
 
+@media screen and (max-width:400px) {
+    .webdesign .inner .tab_list .list_item .item .item_info .info {
+        row-gap: 5px;
+    }
+    .webdesign .inner .tab_list .list_item .item .item_info {
+        row-gap: 15px;
+    }
+}
+
 @media screen and (max-width:370px) {
     .webdesign .inner .tab_menu {
         column-gap: 5px;
@@ -1961,5 +1984,8 @@ h2::before {
     .webdesign .inner .tab_menu.active li {
         font-size: 13px;
         padding: 10px 10px;
+    }
+    .webdesign .inner .tab_list .list_item .item_image .tag_list {
+        gap: 10px;
     }
 }
