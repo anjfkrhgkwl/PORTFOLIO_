@@ -247,6 +247,12 @@ h2::before {
     flex-direction: column;
     row-gap: 10px;
     background-color: var(--color-w);
+    transition: 0.2s;
+}
+
+.main_page .main_inner .scroll.active {
+    transform: translateX(-50%) scale(1.2);
+    transition: 0.2s;
 }
 
 .main_page .main_inner .scroll p {
@@ -514,17 +520,9 @@ h2::before {
     z-index: 90;
     background-color: var(--color-w);
     transition: 0.6s;
+    margin-bottom: 0;
 }
 
-.webdesign .inner .tab_menu.active::before {
-    content: '';
-    width: 100%;
-    border-top: 1px solid var(--color-g02);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 9;
-}
 
 .webdesign .inner .tab_menu.active li {
     font-size: 16px;
@@ -1117,9 +1115,6 @@ h2::before {
         height: 100%;
     }
 
-    .webdesign .inner .tab_menu.active {
-        padding: 10px 0;
-    }
 
     .graphicdesign .inner .list_wrap .all_box {
         width: 100%;
@@ -1307,7 +1302,7 @@ h2::before {
         gap: 15px;
     }
     .webdesign .inner .tab_menu.active li {
-        padding: 15px 20px;
+        padding: 15px 25px;
     }
     .webdesign .inner .tab_menu li {
         padding: 10px 20px;
@@ -1456,6 +1451,9 @@ h2::before {
     .graphicdesign .inner .list_wrap .all_box {
         border-radius: 15px;
     }
+    .graphicdesign .inner .list_wrap .box03 {
+        border-radius: 15px;
+    }
 
     /* 340px 120px 190px 270px 40px 270px 190px 120px 340px */
     .list_wrap .box_num09 {
@@ -1481,12 +1479,13 @@ h2::before {
     }
 
     .webdesign .inner .tab_menu li {
-        padding: 7px 18px;
+        padding: 7px 10px;
         font-size: 15px;
     }
 
     .webdesign .inner .tab_menu.active li {
         font-size: 14px;
+        padding: 15px 15px;
     }
 
     .about {
@@ -1573,6 +1572,7 @@ h2::before {
 
     .contact .inner .contact_list .list h6 {
         font-size: 30px;
+        width: 140px;
     }
 
     .contact .inner .contact_list .list strong {
@@ -1581,8 +1581,10 @@ h2::before {
 
     .webdesign .inner .tab_menu {
         column-gap: 10px;
-        row-gap: 5px;
         flex-wrap: wrap;
+    }
+    .webdesign .inner .tab_menu.active {
+        column-gap: 0px;
     }
 
     .webdesign .inner .tab_menu li {
@@ -1590,9 +1592,10 @@ h2::before {
         border-radius: 7px;
     }
 
-    .webdesign .inner .tab_menu li:first-child {
-        margin-right: 400px;
+    .contact .inner .contact_list .list {
+        border-radius: 15px;
     }
+
 }
 
 /* 640px */
@@ -1707,8 +1710,10 @@ h2::before {
     }
 
     .webdesign .inner .tab_list .list_item .item .qr_code {
-        padding: 5px;
-        border-radius: 5px;
+        display: none;
+    }
+    .contact .inner .contact_list .list {
+        border-radius: 12px;
     }
 }
 
@@ -1726,6 +1731,10 @@ h2::before {
     .webdesign .inner .tab_list .list_item .item .item_info {
         row-gap: 12px;
         height: 130px;
+    }
+    .contact .inner .contact_list .list h6 {
+        width: 120px;
+        font-size: 24px;
     }
 }
 
@@ -1801,7 +1810,9 @@ h2::before {
         top: 10px;
         left: 10px;
     }
-
+    .contact .inner .contact_list .list {
+        border-radius: 10px;
+    }
 
 }
 
@@ -1888,10 +1899,10 @@ h2::before {
 
     .contact .inner .contact_list .list h6 {
         width: 80px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .contact .inner .contact_list .list strong {
-        font-size: 15px;
+        font-size: 14px;
     }
     .webdesign .inner .tab_list .list_item .item .qr_code  {
         padding: 4px;
@@ -1923,4 +1934,32 @@ h2::before {
          width: 305px;
         }
      }
+}
+
+@media screen and (max-width:370px) {
+    .webdesign .inner .tab_menu {
+        column-gap: 5px;
+    }
+    .webdesign .inner .tab_menu li {
+        font-size: 13px;
+        padding: 5px 7px;
+    }
+    .webdesign .inner .tab_menu.active li {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+    .contact .inner .contact_list .list h6 {
+        width: 70px;
+        font-size: 16px;
+    }
+    .contact .inner .contact_list .list strong {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .webdesign .inner .tab_menu.active li {
+        font-size: 13px;
+        padding: 10px 10px;
+    }
 }

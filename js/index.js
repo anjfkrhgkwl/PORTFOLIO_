@@ -55,6 +55,13 @@ $(function () {
         }, 1800, 'swing');
     });
 
+    scrollBtn.mouseenter(function() {
+       scrollBtn.addClass('active')
+    })
+    scrollBtn.mouseleave(function() {
+       scrollBtn.removeClass('active')
+    })
+
     let contactLink = $('.contact_link_none a');
     contactLink.click(function (event) {
         event.preventDefault();
