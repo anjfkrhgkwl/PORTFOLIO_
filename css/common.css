@@ -432,12 +432,15 @@ body {
     }
     .mobile_openbtn .menu_icon div:nth-child(1) {
         top: 4px;
+        transition: 0.3s;
     }
     .mobile_openbtn .menu_icon div:nth-child(2) {
         top: 10px;
+        transition: 0.3s;
     }
     .mobile_openbtn .menu_icon div:nth-child(3) {
         top: 16px;
+        transition: 0.3s;
     }
     .mobile_openbtn .menu_icon div span {
         position: absolute;
