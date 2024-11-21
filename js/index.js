@@ -28,8 +28,8 @@ $(function () {
     let item = $('#graphicdesign');
     let header = $('#header');
 
-    console.log(webDesign.offset().top);
-    console.log(webDesign.height());
+    //console.log(webDesign.offset().top);
+    //console.log(webDesign.height());
 
     let webDesignTop = webDesign.offset().top;
     let itemTop = item.offset().top;
