@@ -36,7 +36,7 @@ $(function () {
 
     $(window).scroll(function () {
         let scrollBar = $(window).scrollTop();
-        console.log(scrollBar);
+        //console.log(scrollBar);
         if (scrollBar > webDesignTop + 100 && scrollBar < itemTop - 600) {
             tabMenuFixed.addClass('active');
             header.children('.header').addClass('active')
